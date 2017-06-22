@@ -9,4 +9,13 @@ public class Student extends Person2 {
 	int getMatrikelNummer() {
 		return matrikelNummer;
 	}
+	
+	public String toString() {
+		return name+", "+address+", Matrikel.Nr.: "+matrikelNummer;
+	}
+	
+	Student(String name, String adresse, int nr) {
+		super(name, adresse);
+		matrikelNummer = nr;
+	}
 }
