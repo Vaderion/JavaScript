@@ -4,12 +4,12 @@ import javax.swing.*;
 import java.awt.event.*;
 import java.awt.*;
 
-public class Dialogue extends JFrame {
+class Dialogue extends JFrame {
 	final ButtonLogic logic;
 	
 	final JButton button;
-	final JTextField inputField = new JTextfiel(20);
-	final JTextField outputField = new JTextfiel(20);
+	final JTextField inputField = new JTextField(20);
+	final JTextField outputField = new JTextField(20);
 	final JPanel p = new JPanel();
 	
 	Dialogue(ButtonLogic 1) {
@@ -24,6 +24,7 @@ public class Dialogue extends JFrame {
 		p.add(inputField, BorderLayout.NORTH);
 		p.add(button,  BorderLayout.SOUTH);
 		getContentPane().add(p);
-		
+		pack();
+		setVisible(true);
 	}
 }

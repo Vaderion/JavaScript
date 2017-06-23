@@ -1,5 +1,7 @@
 package Beispiele;
-
-public class ButtonLogic {
-
+class ButtonLogic {
+	String getDescription() {
+		return "in Groﬂbuchstaben umwandeln";
+	}
+	String eval(String x) {return x.toUpperCase();}
 }
