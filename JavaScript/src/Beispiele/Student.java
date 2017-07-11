@@ -11,7 +11,7 @@ public class Student extends Person2 {
 	}
 	
 	public String toString() {
-		return name+", "+address+", Matrikel.Nr.: "+matrikelNummer;
+		return super.toString() + " Matrikel.Nr.: "+matrikelNummer;
 	}
 	
 	Student(String name, String adresse, int nr) {
